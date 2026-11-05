@@ -1,0 +1,23 @@
+{
+  "lastChangelogVersion": "1.5.0",
+  "theme": "dark",
+  "defaultProvider": "opencode-go",
+  "defaultModel": "deepseek-v4.1-flash",
+  "defaultThinkingLevel": "high",
+  "skills": [],
+  "packages": [
+    "npm:pi-agent-modes",
+    "npm:pi-web-access",
+    "https://github.com/ayghri/i-have-adhd",
+    "https://github.com/payloadcms/skills.git",
+    "https://github.com/mastra-ai/skills.git",
+    "https://github.com/addyosmani/agent-skills.git",
+    "https://github.com/vercel-labs/agent-skills.git",
+    "npm:pi-playwright"
+  ],
+  "enabledModels": [],
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:pi-agent-modes\",\"scope\":\"user\"}": "0.3.0",
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.46.0"
+  }
+}

@@ -147,3 +147,37 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# ===== pi configuration repo =====
+# Secrets / auth
+auth.json
+**/auth.json
+.env
+.env.*
+!.env.example
+
+# Chat transcripts (may contain pasted secrets, absolute paths)
+sessions/
+**/sessions/
+
+# Machine-local / regenerable state
+trust.json
+models-store.json
+deviceId
+**/trust.json
+**/models-store.json
+
+# Caches
+web-search-cache/
+**/web-search-cache/
+**/last-seen-version.json
+*.cache
+
+# Installed dependencies / cloned skill repos (re-downloadable)
+**/node_modules/
+git/
+agent/git/
+
+# OS noise
+.DS_Store
+**/.DS_Store
