@@ -98,6 +98,11 @@ Rules:
 - Avoid comments that merely restate the code. Comment when explaining why a non-obvious choice exists, an important constraint, or a real edge case.
 - Keep ternaries simple. For complex conditions or branches, prefer `if`/`else` or a clearer named value.
 
+### Formatting
+
+- **New files only:** Whenever you create a new file, format it with `pnpm exec prettier --write <new-file>` before finishing.
+- **Do NOT format existing files:** Never run `prettier` (or any whole-file formatter) on existing tracked files — it reformats untouched lines and creates noisy, unreviewable diffs. When editing an existing file, match the surrounding formatting of the lines you touch.
+
 ## Repository safety
 
 - Before editing, inspect `git status` and relevant diffs. Preserve existing work; never reset, clean, or overwrite it as a shortcut.
